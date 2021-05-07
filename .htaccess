@@ -3,4 +3,7 @@ Options -Indexes
 RewriteEngine On 
 RewriteCond %{HTTPS} off 
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteRule (.+)\.html$ /$1/ [L,R]
+RewriteBase /
+RewriteRule ^SkinPixel/?$ SkinPixel.html [NC,L] 
+RewriteRule ^ScrollSomeMore/?$ ScrollSomeMore/index.html [NC,L]
+
