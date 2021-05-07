@@ -6,4 +6,5 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteBase /
 RewriteRule ^SkinPixel/?$ SkinPixel.html [NC,L] 
 RewriteRule ^ScrollSomeMore/?$ ScrollSomeMore/index.html [NC,L]
+RewriteRule ^ScrollSomeMore/docs?$ ScrollSomeMore/docs.html [NC,L]
 
